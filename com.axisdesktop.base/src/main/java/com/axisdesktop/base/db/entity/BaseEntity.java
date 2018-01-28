@@ -12,6 +12,9 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import com.axisdesktop.base.utils.DateUtils;
 
 @MappedSuperclass
@@ -20,10 +23,12 @@ public class BaseEntity<ID> {
 	@GeneratedValue( strategy = GenerationType.IDENTITY )
 	private ID id;
 
+	@CreationTimestamp
 	@Column( updatable = false )
 	@Temporal( TemporalType.TIMESTAMP )
 	private Calendar created;
 
+	@UpdateTimestamp
 	@Temporal( TemporalType.TIMESTAMP )
 	private Calendar modified;
 
