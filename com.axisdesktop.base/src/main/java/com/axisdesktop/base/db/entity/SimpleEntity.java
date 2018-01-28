@@ -1,9 +1,11 @@
 package com.axisdesktop.base.db.entity;
 
+import javax.persistence.Lob;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public class SimpleEntity<ID> extends BaseEntityName<ID> {
+	@Lob
 	private String description;
 
 	public String getDescription() {
