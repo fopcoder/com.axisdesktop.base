@@ -18,7 +18,7 @@ public class SimpleEntity<ID> extends BaseEntityName<ID> {
 
 	@Override
 	public String toString() {
-		return "description=" + description + ", toString()=" + super.toString();
+		return "description=" + description + ", " + super.toString();
 	}
 
 }
