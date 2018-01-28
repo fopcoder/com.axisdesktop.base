@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.axisdesktop.base</groupId>
   <artifactId>entity</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <name>com.axisdesktop.base.entity</name>
   
   <properties>
